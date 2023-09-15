@@ -1,0 +1,26 @@
+create database prasburger;
+
+use prasburger;
+
+create table register(name varchar(100), email varchar(100), phone varchar(100), details varchar(100));
+
+insert into register value('Pras','pras@gmail.com','123456578','Helloo');
+
+select * from register;
+
+create table newdish(id int primary key auto_increment not null, 
+image varchar(500), text varchar(500), description varchar(500));
+
+INSERT INTO newdish (image, text, description) VALUES (
+    'https://media.istockphoto.com/id/1402860995/photo/pile-of-delicious-fried-potatoes-with-salt-against-black-background.webp?b=1&s=170667a&w=0&k=20&c=gvezfdqAZo_sju2y1Q3YZmyMlUlfGHFjeNDgqLVc-PI=',
+    'Fries','Tasty Indian Fries'
+);
+
+select * from newdish;
+
+
+create table customers(sno int primary key auto_increment, name varchar(55), email varchar(100), password varchar(55));
+
+insert into customers(sno,name,email,password) values(1,'pras','pras@gmail.com','123456');
+
+select * from customers;
